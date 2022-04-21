@@ -1,0 +1,17 @@
+name: Update website
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  update-website:
+    runs-on: ubuntu-latest
+    steps:
+      - name: curl [dev]
+        run: |
+          curl -X POST -d {} "${{ secrets.WEBSITE_WEBHOOK_BUILD_DEV }}"
+      # - name: curl [master]
+      #   run: |
+      #     curl -X POST -d {} "${{ secrets.WEBSITE_WEBHOOK_BUILD_MASTER }}"
