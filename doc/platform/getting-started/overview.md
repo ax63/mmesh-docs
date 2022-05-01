@@ -25,6 +25,6 @@ Browse the sections below to get started:
 
 #### [Features](/docs/platform/getting-started/features)
 
-#### [Installation](/docs/platform/getting-started/installation)
+#### [Installation](/docs/platform/installation/overview)
 
 #### [Integrations](/docs/platform/getting-started/integrations)
