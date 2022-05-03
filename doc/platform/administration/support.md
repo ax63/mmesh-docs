@@ -67,34 +67,61 @@ mmeshctl support incident
 
 ***
 
-#### List your Issues
+#### List your Tickets
 
-List your issues.
+List your tickets.
 
 ```shell
-mmeshctl support issue list
+mmeshctl support ticket list
 ```
 
-#### Show Issue
+#### Create Ticket
 
-Show all the details of an issue.
+Create a new ticket.
 
 ```shell
-mmeshctl support issue show
+mmeshctl support ticket create
 ```
 
-#### Delete Issue
+#### Show Ticket
 
-Remove an issue from the database.
+Show all the details of a ticket.
 
 ```shell
-mmeshctl support issue delete
+mmeshctl support ticket show
 ```
 
-#### Add Comment to Issue
+#### Add Comment to Ticket
 
-Add a new comment to an existing issue.
+Add a new comment to an existing ticket:
+
+1. Show the ticket details.
+2. Select `Yes` when asked if you want the ticket comments to be shown.
+3. Select `Yes` when asked if you want to add a new comment to the ticket.
+4. Type the new comment.
 
 ```shell
-mmeshctl support issue comment
+mmeshctl support ticket show
+
+There are comments related to this ticket. Show? (Y/n) => Yes
+
+Add comment to this ticket? (y/N) => Yes
+
+New comment: [Enter two empty lines to finish]
+```
+
+#### Close Ticket
+
+Mark a ticket as *Closed*.
+
+```shell
+mmeshctl support ticket close
+```
+
+#### Delete Ticket
+
+Remove an ticket from the database.
+
+```shell
+mmeshctl support ticket delete
 ```
