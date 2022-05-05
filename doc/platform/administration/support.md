@@ -33,38 +33,6 @@ Open a live-chat session with the mmesh Customer Success Team.
 mmeshctl support chat
 ```
 
-#### Request Information
-
-Request general information about the platform or the service.
-
-```shell
-mmeshctl support info
-```
-
-#### Request Technical Support
-
-Request technical support.
-
-```shell
-mmeshctl support request
-```
-
-#### Submit Feedback
-
-Share your comments and suggestions.
-
-```shell
-mmeshctl support feedback
-```
-
-#### Report Incident
-
-Report an incident.
-
-```shell
-mmeshctl support incident
-```
-
 ***
 
 #### List your Tickets
@@ -91,21 +59,23 @@ Show all the details of a ticket.
 mmeshctl support ticket show
 ```
 
-#### Add Comment to Ticket
-
-Add a new comment to an existing ticket:
+In order to browse the ticket history and add a new comment:
 
 1. Show the ticket details.
-2. Select `Yes` when asked if you want the ticket comments to be shown.
+2. Select `Yes` when asked if you want to show the ticket comments.
 3. Select `Yes` when asked if you want to add a new comment to the ticket.
 4. Type the new comment.
 
 ```shell
 mmeshctl support ticket show
 
-There are comments related to this ticket. Show? (Y/n) => Yes
+[...]
 
-Add comment to this ticket? (y/N) => Yes
+There are comments related to this ticket. Show? (Y/n) -> Yes
+
+[...]
+
+Add comment to this ticket? (y/N) -> Yes
 
 New comment: [Enter two empty lines to finish]
 ```
